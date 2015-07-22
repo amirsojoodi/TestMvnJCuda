@@ -1,0 +1,42 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.testMavenizedJCuda</groupId>
+	<artifactId>TestMvnJCuda</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>TestMvnJCuda</name>
+	<packaging>jar</packaging>
+
+	<properties>
+		<scm.url>scm:git:https://github.com/amirsojoodi/TestMvnJCuda.git</scm.url>
+		<build.time>${maven.build.timestamp}</build.time>
+		<jcuda.version>0.7.0a</jcuda.version>
+		<libJ.version>linux-x86_64</libJ.version>
+	</properties>
+
+	<scm>
+		<connection>${scm.url}</connection>
+	</scm>
+	<dependencies>
+		<dependency>
+			<groupId>jcuda</groupId>
+			<artifactId>jcuda</artifactId>
+			<version>${jcuda.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>jcuda</groupId>
+			<artifactId>libJCudaDriver</artifactId>
+			<version>${jcuda.version}</version>
+			<classifier>${libJ.version}</classifier>
+			<type>so</type>
+		</dependency>
+		<dependency>
+			<groupId>jcuda</groupId>
+			<artifactId>libJCudaRuntime</artifactId>
+			<version>${jcuda.version}</version>
+			<classifier>${libJ.version}</classifier>
+			<type>so</type>
+		</dependency>
+	</dependencies>
+
+</project>
