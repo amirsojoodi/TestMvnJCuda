@@ -35,6 +35,16 @@
 		</dependency>
 		<dependency>
 			<groupId>jcuda</groupId>
+			<artifactId>jcurand</artifactId>
+			<version>${jcuda.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>jcuda</groupId>
+			<artifactId>jcusparse</artifactId>
+			<version>${jcuda.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>jcuda</groupId>
 			<artifactId>libJCudaDriver</artifactId>
 			<version>${jcuda.version}</version>
 			<classifier>${libJ.version}</classifier>
