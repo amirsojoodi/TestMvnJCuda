@@ -25,6 +25,16 @@
 		</dependency>
 		<dependency>
 			<groupId>jcuda</groupId>
+			<artifactId>jcublas</artifactId>
+			<version>${jcuda.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>jcuda</groupId>
+			<artifactId>jcufft</artifactId>
+			<version>${jcuda.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>jcuda</groupId>
 			<artifactId>libJCudaDriver</artifactId>
 			<version>${jcuda.version}</version>
 			<classifier>${libJ.version}</classifier>
@@ -36,6 +46,11 @@
 			<version>${jcuda.version}</version>
 			<classifier>${libJ.version}</classifier>
 			<type>so</type>
+		</dependency>
+		<dependency>
+			<groupId>com.github.wendykierp</groupId>
+			<artifactId>JTransforms</artifactId>
+			<version>3.0</version>
 		</dependency>
 	</dependencies>
 
