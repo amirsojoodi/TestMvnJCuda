@@ -121,8 +121,10 @@ public class JCudaRuntimeDriverMixSample {
 		if (ptxFile.exists()) {
 			return ptxFileName;
 		}
-
-		File cuFile = new File(cuFileName);
+		
+		ClassLoader classLoader = JCudaRuntimeDriverMixSample.class.getClassLoader();
+		File cuFile = new File(classLoader.getResource(cuFileName).getFile());
+		//File cuFile = new File(cuFileName);
 		if (!cuFile.exists()) {
 			throw new IOException("Input file not found: " + cuFileName);
 		}

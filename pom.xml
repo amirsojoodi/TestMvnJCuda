@@ -9,6 +9,7 @@
 
 	<properties>
 		<scm.url>scm:git:https://github.com/amirsojoodi/TestMvnJCuda.git</scm.url>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<build.time>${maven.build.timestamp}</build.time>
 		<jcuda.version>0.7.0a</jcuda.version>
 		<libJ.version>linux-x86_64</libJ.version>
