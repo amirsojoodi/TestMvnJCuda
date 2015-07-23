@@ -9,6 +9,7 @@ Building of the project steps:
 
 3. After building _mavenized-jcuda_ build this project with `mvn package`
 
-4. Run java classes by `java -cp target/lib/\*:target/TestMvnJCuda-0.0.1-SNAPSHOT.jar org.testMavenizedJCuda.JCudaDeviceQuery`
+4. Run java classes like JCudaDeviceQuery with:
+`java -cp target/lib/\*:target/TestMvnJCuda-0.0.1-SNAPSHOT.jar org.testMavenizedJCuda.JCudaDeviceQuery`
 
 *Steps are tested in Ubuntu x64 and Maven 3.3.3*
