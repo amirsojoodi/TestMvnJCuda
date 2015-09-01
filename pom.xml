@@ -36,6 +36,16 @@
 		</dependency>
 		<dependency>
 			<groupId>jcuda</groupId>
+			<artifactId>jcudpp</artifactId>
+			<version>${jcuda.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>jcuda</groupId>
+			<artifactId>jcufft</artifactId>
+			<version>${jcuda.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>jcuda</groupId>
 			<artifactId>jcurand</artifactId>
 			<version>${jcuda.version}</version>
 		</dependency>
